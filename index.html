@@ -1,48 +1,453 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>NISSHITSU Technologies Pvt Ltd</title>
-  <meta name="description" content="NISSHITSU Technologies Pvt Ltd is a web development company from central India. They are expert in building high performance web applications.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NISSHITSU Technologies - Cutting Edge Solutions</title>
+  <meta name="description" content="NISSHITSU Technologies specializes in cutting-edge technology solutions, delivering innovative web applications, AI/ML solutions, and digital transformation services.">
 
-  <meta property="og:title" content="NISSHITSU Technologies Pvt Ltd">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="https://nisshitsu.com">
-  <meta property="og:image" content="tile-wide.png">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ffffff',
+            secondary: '#4a90e2',
+            accent: '#2563eb',
+            dark: '#f8fafc',
+            light: '#1e293b',
+            gray: '#64748b',
+            highlight: '#f1f5f9',
+          },
+          fontFamily: {
+            'zen': ['Zen Dots', 'cursive'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body class="bg-primary text-light font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm fixed w-full z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl">
+          <span class="font-zen text-accent">NISSHITSU</span>
+          <span class="text-light"> Technologies</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="hover:text-accent transition-colors">About</a>
+          <a href="#services" class="hover:text-accent transition-colors">Services</a>
+          <a href="#technologies" class="hover:text-accent transition-colors">Technologies</a>
+          <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Add your site or application content here -->
-  <div class="container">
-    <span class="main">NISSHITSU</span><br />
-    <span class="other">Technologies Pvt Ltd</span>
-  </div>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-b from-white to-highlight">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">
+        <span class="font-zen text-accent">Pioneering</span> Tomorrow's Technology
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray">
+        We build innovative solutions that transform businesses through cutting-edge technology
+      </p>
+      <a href="#contact" class="inline-block bg-accent text-white px-8 py-3 rounded hover:bg-accent/90 transition-colors">
+        Get Started
+      </a>
+    </div>
+  </section>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-highlight">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 font-zen text-accent">About Us</h2>
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <p class="text-lg text-gray">
+          NISSHITSU Technologies is a forward-thinking technology company specializing in developing innovative solutions for the digital age. We combine expertise with creativity to deliver exceptional results.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-code text-4xl text-accent mb-4"></i>
+          <h3 class="text-2xl font-bold mb-2">500K+</h3>
+          <p class="text-gray">Lines of Code</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-project-diagram text-4xl text-accent mb-4"></i>
+          <h3 class="text-2xl font-bold mb-2">100+</h3>
+          <p class="text-gray">Projects Delivered</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-users text-4xl text-accent mb-4"></i>
+          <h3 class="text-2xl font-bold mb-2">50+</h3>
+          <p class="text-gray">Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 font-zen text-accent">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <!-- Web Development -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-globe text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Web Development</h3>
+          <p class="text-gray">Custom web applications built with modern technologies and best practices</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• Enterprise Web Applications</li>
+            <li class="mb-2">• E-commerce Solutions</li>
+            <li class="mb-2">• CMS Development</li>
+            <li class="mb-2">• API Development</li>
+          </ul>
+        </div>
+
+        <!-- Mobile Solutions -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-mobile-alt text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Mobile Solutions</h3>
+          <p class="text-gray">Native and cross-platform mobile applications for iOS and Android</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• iOS App Development</li>
+            <li class="mb-2">• Android App Development</li>
+            <li class="mb-2">• Cross-platform Apps</li>
+            <li class="mb-2">• Mobile Backend Services</li>
+          </ul>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-brain text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">AI & Machine Learning</h3>
+          <p class="text-gray">Intelligent solutions powered by cutting-edge AI/ML technologies</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• Predictive Analytics</li>
+            <li class="mb-2">• Natural Language Processing</li>
+            <li class="mb-2">• Computer Vision</li>
+            <li class="mb-2">• Deep Learning Solutions</li>
+          </ul>
+        </div>
+
+        <!-- Cloud Services -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-cloud text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Cloud Services</h3>
+          <p class="text-gray">Scalable cloud solutions and infrastructure management</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• Cloud Migration</li>
+            <li class="mb-2">• Serverless Architecture</li>
+            <li class="mb-2">• Cloud Security</li>
+            <li class="mb-2">• Cloud Optimization</li>
+          </ul>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-shield-alt text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Cybersecurity</h3>
+          <p class="text-gray">Advanced security solutions and threat protection services</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• Security Audits</li>
+            <li class="mb-2">• Penetration Testing</li>
+            <li class="mb-2">• Security Monitoring</li>
+            <li class="mb-2">• Compliance Management</li>
+          </ul>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-chart-line text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Data Analytics</h3>
+          <p class="text-gray">Business intelligence and data-driven decision making</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• Business Intelligence</li>
+            <li class="mb-2">• Data Visualization</li>
+            <li class="mb-2">• Big Data Solutions</li>
+            <li class="mb-2">• Data Warehousing</li>
+          </ul>
+        </div>
+
+        <!-- Automation -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-robot text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Automation</h3>
+          <p class="text-gray">Process automation and workflow optimization</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• RPA Solutions</li>
+            <li class="mb-2">• Workflow Automation</li>
+            <li class="mb-2">• Business Process Automation</li>
+            <li class="mb-2">• Test Automation</li>
+          </ul>
+        </div>
+
+        <!-- DevOps -->
+        <div class="bg-white p-6 rounded-lg shadow-sm hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-cogs text-3xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">DevOps</h3>
+          <p class="text-gray">Continuous integration and deployment solutions</p>
+          <ul class="mt-4 text-sm text-gray">
+            <li class="mb-2">• CI/CD Pipeline</li>
+            <li class="mb-2">• Infrastructure as Code</li>
+            <li class="mb-2">• Container Orchestration</li>
+            <li class="mb-2">• Monitoring Solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="technologies" class="py-20 bg-highlight">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 font-zen text-accent">Technologies We Master</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-php text-4xl text-accent mb-2"></i>
+          <span>PHP</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-react text-4xl text-accent mb-2"></i>
+          <span>React</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-node-js text-4xl text-accent mb-2"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-python text-4xl text-accent mb-2"></i>
+          <span>Python</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-aws text-4xl text-accent mb-2"></i>
+          <span>AWS</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fas fa-database text-4xl text-accent mb-2"></i>
+          <span>MongoDB</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-docker text-4xl text-accent mb-2"></i>
+          <span>Docker</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-laravel text-4xl text-accent mb-2"></i>
+          <span>Laravel</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-php text-4xl text-accent mb-2"></i>
+          <span>Yii</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-vuejs text-4xl text-accent mb-2"></i>
+          <span>Vue.js</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-git-alt text-4xl text-accent mb-2"></i>
+          <span>Git</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:transform hover:scale-105 transition-transform">
+          <i class="fab fa-jenkins text-4xl text-accent mb-2"></i>
+          <span>Jenkins</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 font-zen text-accent">Get In Touch</h2>
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <div class="mb-8">
+              <i class="fas fa-envelope text-accent text-xl mr-3"></i>
+              <span>contact@nisshitsu.com</span>
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt text-accent text-xl mr-3"></i>
+              <span>Central India</span>
+            </div>
+          </div>
+          <form id="contactForm" class="space-y-4">
+            <div>
+              <input type="text" id="name" name="name" placeholder="Your Name" required
+                class="w-full bg-white border border-gray-200 rounded p-3 focus:outline-none focus:border-accent">
+              <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Please enter your name</p>
+            </div>
+            <div>
+              <input type="email" id="email" name="email" placeholder="Your Email" required
+                class="w-full bg-white border border-gray-200 rounded p-3 focus:outline-none focus:border-accent">
+              <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address</p>
+            </div>
+            <div>
+              <textarea id="message" name="message" placeholder="Your Message" rows="4" required
+                class="w-full bg-white border border-gray-200 rounded p-3 focus:outline-none focus:border-accent"></textarea>
+              <p id="messageError" class="text-red-500 text-sm mt-1 hidden">Please enter your message</p>
+            </div>
+            <button type="submit" id="submitButton"
+              class="w-full bg-accent text-white py-3 rounded hover:bg-accent/90 transition-colors">
+              Send Message
+            </button>
+            <div id="formStatus" class="text-center hidden"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-highlight">
+    <div class="container mx-auto px-4 text-center">
+      <div class="text-2xl mb-8">
+        <span class="font-zen text-accent">NISSHITSU</span>
+        <span class="text-light"> Technologies</span>
+      </div>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="#" class="text-light hover:text-accent transition-colors">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="#" class="text-light hover:text-accent transition-colors">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="#" class="text-light hover:text-accent transition-colors">
+          <i class="fab fa-twitter text-2xl"></i>
+        </a>
+      </div>
+      <div class="mb-8 text-gray">
+        <p>NISSHITSU Technologies Pvt Ltd</p>
+        <p>Flat No 302, Vaishnavi Regency</p>
+        <p>Behind Mahajan Hardware</p>
+        <p>Nagpur, 440014, India</p>
+      </div>
+      <p class="text-gray/60">&copy; 2024 NISSHITSU Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Form validation and submission
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const formStatus = document.getElementById('formStatus');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const nameError = document.getElementById('nameError');
+    const emailError = document.getElementById('emailError');
+    const messageError = document.getElementById('messageError');
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+
+    function showError(element, message) {
+      element.classList.remove('hidden');
+      element.textContent = message;
+    }
+
+    function hideError(element) {
+      element.classList.add('hidden');
+    }
+
+    function resetForm() {
+      form.reset();
+      hideError(nameError);
+      hideError(emailError);
+      hideError(messageError);
+      formStatus.classList.add('hidden');
+    }
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        // Reset previous errors
+        hideError(nameError);
+        hideError(emailError);
+        hideError(messageError);
+        
+        // Validate form
+        let isValid = true;
+        
+        if (!nameInput.value.trim()) {
+          showError(nameError, 'Please enter your name');
+          isValid = false;
+        }
+        
+        if (!emailInput.value.trim()) {
+          showError(emailError, 'Please enter your email');
+          isValid = false;
+        } else if (!validateEmail(emailInput.value)) {
+          showError(emailError, 'Please enter a valid email address');
+          isValid = false;
+        }
+        
+        if (!messageInput.value.trim()) {
+          showError(messageError, 'Please enter your message');
+          isValid = false;
+        }
+        
+        if (!isValid) return;
+        
+        // Show submitting state
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+        formStatus.classList.remove('hidden');
+        formStatus.textContent = 'Submitting your message...';
+        formStatus.className = 'text-center text-accent';
+        
+        try {
+          // Simulate form submission (replace with actual API call)
+          await new Promise(resolve => setTimeout(resolve, 1500));
+          
+          // Show success message
+          formStatus.textContent = 'Your request has been sent. We will contact you soon.';
+          formStatus.className = 'text-center text-green-500';
+          
+          // Reset form after 3 seconds
+          setTimeout(() => {
+            resetForm();
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send Message';
+          }, 3000);
+          
+        } catch (error) {
+          // Show error message
+          formStatus.textContent = 'An error occurred. Please try again later.';
+          formStatus.className = 'text-center text-red-500';
+          submitButton.disabled = false;
+          submitButton.textContent = 'Send Message';
+        }
+      });
+    }
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
